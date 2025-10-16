@@ -1,139 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="static/css/style.css" >
-
+<head>
+    <meta charset="UTF-8">
     <title>Car Price Predictor</title>
-  </head>
-  <body class="bg-dark">
-  <div class="container">
-        <div class="row">
-            <div class="card mt-50" style="width: 50%; height:50%">
-                <div class ="card-header" style="text-align: center">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body class="bg-dark">
 
-                        <h1>Welcome to car Predictor</h1>
-                    </div>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header text-center">
+            <h1>Welcome to Car Price Predictor</h1>
+        </div>
+        <div class="card-body">
+            <form id="predictForm">
+                <div class="form-group">
+                    <label><b>Select Company:</b></label>
+                    <select class="form-control" id="company" name="company" required onchange="loadCarModels()">
+                        {% for company in companies %}
+                        <option value="{{ company }}">{{ company }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
 
-          <div class="card-body">
+                <div class="form-group">
+                    <label><b>Select Model:</b></label>
+                    <select class="form-control" id="car_model" name="car_models" required>
+                        <option value="">Select Model</option>
+                    </select>
+                </div>
 
-                         <form method="post" accept-charset="utf-8" >
-                            <div class="col-10 form-group" style="text-align: center">
-                             <label><b>Select Company: </b></label><br>
-                                <select class="selectpicker form-control" id="company" name="company" required="1" onchange="load_car_models(this.id, 'car_models')">
+                <div class="form-group">
+                    <label><b>Select Year of Purchase:</b></label>
+                    <select class="form-control" id="year" name="year" required>
+                        {% for year in years %}
+                        <option value="{{ year }}">{{ year }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
 
-                                    {% for company in companies %}
-                                        <option value="{{ company }}">{{ company }}</option>
-                                    {% endfor %}
-                                </select>
-                             </div>
+                <div class="form-group">
+                    <label><b>Select Fuel Type:</b></label>
+                    <select class="form-control" id="fuel_type" name="fuel_type" required>
+                        {% for fuel in fuel_types %}
+                        <option value="{{ fuel }}">{{ fuel }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
 
-                             <div class="col-10 form-group" style="text-align: center">
-                             <label><b>Select Model: </b></label><br>
-                                <select class="selectpicker form-control" id="car_models" name="car_models" required="1">
+                <div class="form-group">
+                    <label><b>Enter Kilometres Driven:</b></label>
+                    <input type="number" class="form-control" id="kilo_driven" name="kilo_driven" placeholder="Enter kilometres" required>
+                </div>
 
-                                </select>
-                                </div>
+                <button type="button" class="btn btn-primary btn-block" onclick="sendData()">Predict Price</button>
+            </form>
 
-                                 <div class="col-10 form-group" style="text-align: center">
-                                    <label><b>Select Year of Purchase: </b></label><br>
-                                        <select class="selectpicker form-control" id="year" name="year" required="1">
-                                            {% for year in years %}
-                                              <option value="{{ year }}">{{ year }}</option>
-                                             {% endfor %}
-                                             </select>
-                                            </div>
+            <div class="mt-3 text-center">
+                <h4><span id="prediction"></span></h4>
+            </div>
+        </div>
+    </div>
+</div>
 
-                                    <div class="col-10 form-group" style="text-align: center">
-                                     <label><b>Select Fuel Type: </b></label><br>
-                                        <select class="selectpicker form-control" id="fuel_type" name="fuel_type" required="1">
-                                          {% for ft in fuel_types %}
-                                            <option value="{{ ft }}">{{ ft }}</option>
-                                             {% endfor %}
-                                        </select>
-                                         </div>
+<script>
+    const carModels = {
+        {% for company in companies %}
+        "{{ company }}": [
+            {% for model in car_models %}
+                {% if model.startswith(company) %}
+                "{{ model }}",
+                {% endif %}
+            {% endfor %}
+        ],
+        {% endfor %}
+    };
 
-                                        <div class="col-10 form-group" style="text-align: center">
-                                         <label><b>Enter Number of Kilometers: </b></label><br>
-                                         <input  type="text" class="form-control" id="kilo_driven" name="kilo_driven" placeholder="Enter no. of kilometers travelled">
-                                            </div>
+    function loadCarModels() {
+        const company = document.getElementById("company").value;
+        const modelSelect = document.getElementById("car_model");
+        modelSelect.innerHTML = "<option value=''>Select Model</option>";
+        if(carModels[company]) {
+            carModels[company].forEach(model => {
+                const opt = document.createElement("option");
+                opt.value = model;
+                opt.text = model;
+                modelSelect.add(opt);
+            });
+        }
+    }
 
-                                             <div class="col-10 form-group" style="text-align: center">
-                                             <button type="button" class="btn btn-primary form-control" onclick="send_data()">Predict Price</button>
-                                                 </div>
-                                                </form>
+    function sendData() {
+        const form = document.getElementById("predictForm");
+        const fd = new FormData(form);
 
-                                                 <br>
-                                                   <div class="row">
-                                                     <div class="col-12" style="text-align: center">
-                                                        <h3> <span id="prediction"></span></h3>
-
-                                                       </div>
-                                                      </div>
-                                                     </div>
-                                                   </div>
-                                                 </div>
-                                               </div>
-    <script>
-
-
-        function load_car_models(company_id, car_model_id){
-            var company=document.getElementById(company_id);
-            var car_model = document.getElementById(car_model_id);
-            car_model.value="";
-            car_model.innerHTML="";
-
-            {% for company in companies %}
-                if (company.value == "{{company}}")
-                    {
-                        {% for model in car_models %}
-                            {% if company in model %}
-                                var newOption = document.createElement("option");
-                                newOption.value="{{model}}";
-                                newOption.innerHTML="{{model}}";
-                                car_model.options.add(newOption);
-                              {% endif %}
-                           {% endfor %}
-                      }
-                {% endfor %}
-                }
-   function form_handler(event)
-   {event.preventDefault();}
-
-    function send_data()
-    {
-    document.querySelector('form').addEventListener("submit", form_handler);
-    var fd = new FormData(document.querySelector('form'));
-    var xhr= new XMLHttpRequest({mozSystem: true});
-    xhr.open('POST', '/predict', true);
-        document.getElementById("prediction").innerHTML="Wait! predicting";
-        xhr.onreadystatechange=function()
-        {
-        if (xhr.readyState == XMLHttpRequest.DONE)
-        {
-            document.getElementById("prediction").innerHTML="Prediction : "+xhr.responseText;
-            }};
-         xhr.onload= function(){};
-            xhr.send(fd);
-}
+        document.getElementById("prediction").innerText = "Predicting...";
+        fetch("/predict", {
+            method: "POST",
+            body: fd
+        })
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("prediction").innerText = "Prediction: ₹" + data;
+        })
+        .catch(err => {
+            document.getElementById("prediction").innerText = "Error: " + err;
+        });
+    }
 </script>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-  </body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
 </html>

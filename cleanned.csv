@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 
-,name,company,year,Price,kms_driven,fuel_type
-=======
 Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
->>>>>>> website
+
+
+
 0,Hyundai Santro Xing,Hyundai,2007,80000,45000,Petrol
 1,Mahindra Jeep CL550,Mahindra,2006,425000,40,Diesel
 2,Hyundai Grand i10,Hyundai,2014,325000,28000,Petrol
@@ -94,21 +93,17 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 87,Honda City 1.5,Honda,2005,90000,50000,Petrol
 88,Hyundai Elite i20,Hyundai,2014,415000,32000,Petrol
 89,Skoda Fabia 1.2L,Skoda,2011,155000,45863,Diesel
-<<<<<<< HEAD
-90,BMW 3 Series,BMW,2011,600000,60500,Petrol
-=======
+
 90,BMW 3 Series,Bmw,2011,600000,60500,Petrol
->>>>>>> website
+
 91,Maruti Suzuki A,Maruti,2011,189500,12500,Petrol
 92,Toyota Etios GD,Toyota,2013,350000,60000,Diesel
 93,Ford Figo Diesel,Ford,2012,210000,35000,Diesel
 94,Maruti Suzuki Swift,Maruti,2014,390000,35000,Petrol
 95,Chevrolet Beat LT,Chevrolet,2012,135000,45000,Diesel
-<<<<<<< HEAD
-96,BMW 7 Series,BMW,2009,1600000,35000,Petrol
-=======
+
 96,BMW 7 Series,Bmw,2009,1600000,35000,Petrol
->>>>>>> website
+r
 97,Mahindra XUV500 W8,Mahindra,2013,701000,38000,Diesel
 98,Hyundai i10 Magna,Hyundai,2014,265000,18000,Petrol
 99,Hyundai Verna Fluidic,Hyundai,2015,525000,35000,Diesel
@@ -212,11 +207,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 197,Maruti Suzuki Wagon,Maruti,2009,135000,45000,Petrol
 198,Maruti Suzuki Swift,Maruti,2006,135000,45000,Petrol
 199,Tata Sumo Victa,Tata,2012,285000,65000,Diesel
-<<<<<<< HEAD
-200,MARUTI SUZUKI DESI,MARUTI,0,400000,0,0
-=======
+
 200,MARUTI SUZUKI DESI,Maruti,0,400000,0,0
->>>>>>> website
+
 201,Maruti Suzuki Wagon,Maruti,2010,145000,54870,Petrol
 202,Maruti Suzuki Alto,Maruti,2010,135000,34580,Petrol
 203,Volkswagen Passat Diesel,Volkswagen,2009,450000,97000,Diesel
@@ -405,11 +398,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 386,Volkswagen Vento Konekt,Volkswagen,2011,245000,65000,Diesel
 387,Mercedes Benz C,Mercedes,2002,399000,41000,Petrol
 388,Maruti Suzuki Ertiga,Maruti,2013,450000,90000,Diesel
-<<<<<<< HEAD
-389,URJE,URJENT,0,180000,0,0
-=======
+
 389,URJE,Urjent,0,180000,0,0
->>>>>>> website
+
 390,Honda City,Honda,2000,65000,80000,Petrol
 391,Hyundai Santro Xing,Hyundai,2006,75000,46000,Petrol
 392,Maruti Suzuki Omni,Maruti,2001,70000,70000,Petrol
@@ -453,11 +444,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 430,Ford EcoSport Titanium,Ford,2014,500000,40000,Diesel
 431,Honda Amaze 1.5,Honda,2016,240000,160000,Diesel
 432,Hyundai Verna 1.6,Hyundai,2017,800000,12000,Petrol
-<<<<<<< HEAD
-433,BMW 5 Series,BMW,2011,1299000,49000,Diesel
-=======
+
 433,BMW 5 Series,Bmw,2011,1299000,49000,Diesel
->>>>>>> website
+
 434,Skoda Superb 1.8,Skoda,2011,530000,68000,Petrol
 435,Audi Q3 2.0,Audi,2013,1499000,37000,Diesel
 436,Mahindra Bolero DI,Mahindra,2012,220000,59466,Diesel
@@ -562,11 +551,8 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 535,Maruti Suzuki Dzire,Maruti,2013,380000,35000,Petrol
 536,Hyundai Fluidic Verna,Hyundai,2013,350000,117000,Diesel
 537,Tata Indica V2,Tata,2005,35000,150000,Diesel
-<<<<<<< HEAD
-538,BMW X1 xDrive20d,BMW,2011,1150000,72000,Diesel
-=======
-538,BMW X1 xDrive20d,Bmw,2011,1150000,72000,Diesel
->>>>>>> website
+
+
 539,Hyundai i20 Asta,Hyundai,2010,300000,10750,Petrol
 540,Honda City 1.5,Honda,2009,269000,55000,Petrol
 541,Tata Nano,Tata,2013,60000,6800,Petrol
@@ -584,11 +570,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 553,Renault Duster 85PS,Renault,2013,401919,57923,Diesel
 554,Chevrolet Enjoy,Chevrolet,2014,490000,30201,Diesel
 555,Maruti Suzuki Alto,Maruti,2017,280000,6200,Petrol
-<<<<<<< HEAD
-556,BMW 5 Series,BMW,2009,650000,37518,Petrol
-=======
+
 556,BMW 5 Series,Bmw,2009,650000,37518,Petrol
->>>>>>> website
+
 557,Toyota Etios Liva,Toyota,2014,160000,24652,Petrol
 558,Mahindra Jeep MM,Mahindra,2004,424000,383,Diesel
 559,Chevrolet Beat LS,Chevrolet,2016,225000,95000,Diesel
@@ -621,11 +605,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 586,Maruti Suzuki Alto,Maruti,2017,360000,9400,Petrol
 587,Hyundai i20 Magna,Hyundai,2010,210000,50000,Petrol
 588,Hyundai i10 Magna,Hyundai,2009,170000,75000,Petrol
-<<<<<<< HEAD
-589,tata Indica,tata,0,130000,0,0
-=======
+
 589,tata Indica,Tata,0,130000,0,0
->>>>>>> website
+
 590,Tata Zest XE,Tata,2017,380000,70000,Diesel
 591,Mahindra Xylo E8,Mahindra,2009,295000,64000,Diesel
 592,Toyota Corolla Altis,Toyota,2010,185000,55000,Petrol
@@ -657,11 +639,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 618,Maruti Suzuki Swift,Maruti,2012,280000,48006,Diesel
 619,Maruti Suzuki Swift,Maruti,2012,280000,48006,Diesel
 620,Maruti Suzuki Swift,Maruti,2012,280000,48006,Diesel
-<<<<<<< HEAD
-621,very good condition,very,0,200000,0,0
-=======
+
 621,very good condition,Very,0,200000,0,0
->>>>>>> website
+
 622,Toyota Innova 2.0,Toyota,2012,600000,80000,Diesel
 623,Maruti Suzuki Swift,Maruti,2010,190000,74000,Diesel
 624,Hyundai Elite i20,Hyundai,2015,500000,22000,Petrol
@@ -686,15 +666,11 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 643,Tata Indica eV2,Tata,2015,140000,60105,Diesel
 644,Jaguar XF 2.2,Jaguar,2013,2190000,29000,Diesel
 645,Audi Q5 2.0,Audi,2014,2390000,34000,Diesel
-<<<<<<< HEAD
-646,BMW 3 Series,BMW,2011,1075000,35000,Diesel
-647,Maruti Suzuki Swift,Maruti,2015,475000,22000,Petrol
-648,BMW X1 sDrive20d,BMW,2012,1025000,41000,Diesel
-=======
+
 646,BMW 3 Series,Bmw,2011,1075000,35000,Diesel
 647,Maruti Suzuki Swift,Maruti,2015,475000,22000,Petrol
 648,BMW X1 sDrive20d,Bmw,2012,1025000,41000,Diesel
->>>>>>> website
+
 649,Maruti Suzuki S,Maruti,2016,615000,21000,Diesel
 650,Maruti Suzuki Ertiga,Maruti,2013,475000,48000,Diesel
 651,Maruti Suzuki Alto,Maruti,2016,270000,38000,Petrol
@@ -719,11 +695,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 670,Toyota Corolla Altis,Toyota,2014,790000,29000,Petrol
 671,Mitsubishi Pajero Sport,Mitsubishi,2015,1725000,37000,Diesel
 672,Chevrolet Beat LT,Chevrolet,2012,135000,36000,Petrol
-<<<<<<< HEAD
-673,BMW X1,BMW,2011,1000000,34000,Diesel
-=======
+
 673,BMW X1,Bmw,2011,1000000,34000,Diesel
->>>>>>> website
+
 674,Datsun Redi GO,Datsun,2018,299999,7000,Petrol
 675,Mercedes Benz C,Mercedes,2009,1225000,76000,Diesel
 676,Mahindra Scorpio SLX,Mahindra,2004,175000,60000,Diesel
@@ -752,11 +726,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 699,Mahindra Scorpio SLX,Mahindra,2008,285000,80000,Diesel
 700,I want to,I,0,475000,0,0
 701,Hyundai Santro AE,Hyundai,2011,165000,45000,Petrol
-<<<<<<< HEAD
-702,i want sale,i,0,320000,0,0
-=======
+
 702,i want sale,I,0,320000,0,0
->>>>>>> website
+
 703,Maruti Suzuki Swift,Maruti,2009,250000,51000,Diesel
 704,Mahindra Scorpio S4,Mahindra,2015,865000,30000,Diesel
 705,Tata ZEST 6,Tata,0,370000,0,0
@@ -789,11 +761,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 732,Hyundai Eon Era,Hyundai,2014,200000,28400,Petrol
 733,Hyundai Eon,Hyundai,2014,200000,28000,Petrol
 734,Maruti Suzuki Swift,Maruti,2015,425000,42000,Diesel
-<<<<<<< HEAD
-735,MARUTI SUZUKI ERTIGA,MARUTI,0,650000,0,0
-=======
+
 735,MARUTI SUZUKI ERTIGA,Maruti,0,650000,0,0
->>>>>>> website
+
 736,Hyundai Verna 1.6,Hyundai,2012,600000,29000,Diesel
 737,Chevrolet Tavera LS,Chevrolet,2005,130000,68485,Diesel
 738,Tata Tiago Revotron,Tata,2018,430000,3500,Petrol
@@ -825,24 +795,7 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 764,Maruti Suzuki Swift,Maruti,2009,120000,90000,Diesel
 765,Tata Indigo eCS,Tata,2016,130000,150000,Diesel
 766,Chevrolet Beat LS,Chevrolet,2014,189000,31000,Diesel
-<<<<<<< HEAD
-767,2012 Tata Sumo,2012,0,250000,0,0
-768,Mahindra Xylo E8,Mahindra,2011,365000,43000,Diesel
-769,Hyundai Eon D,Hyundai,2013,170000,20000,Petrol
-770,Well mentained Tata,Well,0,380000,0,0
-771,all paper updated,all,0,145000,0,0
-772,Maruti Ertiga showroom,Maruti,0,480000,0,0
-773,scratch less Tata,scratch,0,140000,0,0
-774,Maruti Suzuki swift,Maruti,0,360000,0,0
-775,Commercial Chevrolet beat,Commercial,0,180000,0,0
-776,urgent sell my,urgent,0,350000,0,0
-777,Tata Sumo Gold,Tata,2013,215000,100000,Petrol
-778,sell my car,sell,0,300000,0,0
-779,Maruti Suzuki Swift,Maruti,0,310000,0,0
-780,urgent sale Ta,urgent,0,220000,0,0
-781,Maruti Suzuki Alto,Maruti,0,95000,0,0
-782,TATA INDI,TATA,0,110000,0,0
-=======
+
 768,Mahindra Xylo E8,Mahindra,2011,365000,43000,Diesel
 769,Hyundai Eon D,Hyundai,2013,170000,20000,Petrol
 770,Well mentained Tata,Well,0,380000,0,0
@@ -858,7 +811,7 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 780,urgent sale Ta,Urgent,0,220000,0,0
 781,Maruti Suzuki Alto,Maruti,0,95000,0,0
 782,TATA INDI,Tata,0,110000,0,0
->>>>>>> website
+
 783,Tata Nano,Tata,2013,60000,7000,Petrol
 784,Hyundai Elite i20,Hyundai,2017,599999,31000,Petrol
 785,Hyundai i10 Magna,Hyundai,2009,400000,33000,Petrol
@@ -924,11 +877,9 @@ Unnamed: 0,name,company,year,Price,kms_driven,fuel_type
 845,Maruti Suzuki Swift,Maruti,2009,250000,51000,Diesel
 846,Skoda Fabia,Skoda,2009,110000,45000,Petrol
 847,Maruti Suzuki Ritz,Maruti,2011,270000,50000,Petrol
-<<<<<<< HEAD
-848,tata zest 2017,tata,0,450000,0,0
-=======
+
 848,tata zest 2017,Tata,0,450000,0,0
->>>>>>> website
+
 849,Tata Indica V2,Tata,2009,110000,30000,Diesel
 850,Toyota Corolla Altis,Toyota,2009,300000,132000,Petrol
 851,Ta,Tara,0,310000,0,0
